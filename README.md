@@ -28,13 +28,15 @@ draft: false           # true면 빌드에서 제외
 본문 (마크다운)
 ```
 
-## 바꿔야 할 플레이스홀더
+## 자주 손대는 곳
+
+브랜드명·필명·이메일·파비콘은 모두 채워져 있다. 내용을 바꿀 때 보는 곳:
 
 | 위치 | 내용 |
 |------|------|
-| `src/layouts/Base.astro` | 브랜드명 `LedgerLab`, 필명 `M.K.`, 푸터 |
-| `src/pages/index.astro` | 히어로 문구, `mailto:[[EMAIL]]` |
-| `astro.config.mjs` | 배포 도메인(`site`), GitHub Pages면 `base` |
+| `src/pages/index.astro` | 히어로 문구, 증거바 숫자(`stats`), 서비스 카드(`services`), 연락 이메일 |
+| `src/layouts/Base.astro` | 상단 네비게이션, 푸터, 색상 토큰(`:root`) |
+| `astro.config.mjs` | 배포 도메인(`site`), GitHub Pages면 `base` (커스텀 도메인 연결 시 `base` 삭제) |
 | `public/favicon.svg` | 파비콘 |
 
 ## 배포
