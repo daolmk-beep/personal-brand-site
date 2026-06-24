@@ -21,6 +21,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Pages            # UI 설정에 의존하지 않고 Pages를 직접 활성화
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Build Astro site
         uses: withastro/action@v3   # 패키지매니저 자동감지 → install + build + upload
 
