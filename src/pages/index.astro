@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 // 최근 글 5편 (draft 제외, 날짜 내림차순)
 const posts = (await getCollection('blog', ({ data }) => !data.draft))

@@ -8,7 +8,7 @@ const {
   description = '현직 CPA가 실사(DD)·감사·밸류에이션을 자동화 엔진으로 풀어가는 과정의 기록.',
 } = Astro.props;
 
-const base = import.meta.env.BASE_URL; // GitHub Pages 서브경로 대응
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/'); // 끝 슬래시 보장 (서브경로 대응)
 const nav = [
   { href: `${base}#about`, label: '소개' },
   { href: `${base}blog`, label: '글' },
