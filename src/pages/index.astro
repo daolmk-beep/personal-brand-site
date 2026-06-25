@@ -65,6 +65,12 @@ const principles = [
   <!-- HERO -->
   <div class="wrap">
     <section class="hero">
+      <div class="built-with">
+        <span class="bw-kicker">BUILT WITH</span>
+        <span class="bw-claude">Claude Code</span>
+        <span class="bw-x">×</span>
+        <span class="bw-codex">Codex</span>
+      </div>
       <span class="eyebrow">현직 CPA · AI 자동화 융합</span>
       <h1>팀이 한 달 걸리던 IM·DD보고서를,<br><b>혼자서 1주일에.</b></h1>
       <p>재무·세무실사부터 밸류에이션, 산업분석·Porter 5 Forces·IM 덱까지 —
@@ -175,6 +181,15 @@ const principles = [
 <style>
   /* hero */
   .hero{padding:96px 0 64px;border-top:none}
+  .built-with{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+  .bw-kicker{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;
+    color:var(--faint);align-self:center}
+  .bw-claude{font-family:'Fraunces',Georgia,serif;font-size:46px;font-weight:600;
+    color:#c15f3c;line-height:1;letter-spacing:-.5px}
+  .bw-x{font-family:'Fraunces',Georgia,serif;font-size:32px;color:var(--faint);font-weight:500}
+  .bw-codex{font-family:'Fraunces',Georgia,serif;font-size:46px;font-weight:600;
+    color:#2563eb;line-height:1;letter-spacing:-.3px}
+  @media(max-width:560px){.bw-claude,.bw-codex{font-size:32px}.bw-x{font-size:23px}}
   .eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:1.5px;
     text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);
     padding:6px 12px;border-radius:999px;margin-bottom:24px}
