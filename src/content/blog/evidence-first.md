@@ -32,3 +32,16 @@ draft: false
 
 자동화는 빠르다. 그러나 빠름이 신뢰를 만들지는 않는다.
 **추적 가능성**이 신뢰를 만든다.
+
+## 실제 산출물 — 밸류에이션 자동화 엔진
+
+같은 "증거 → 검증" 원칙은 밸류에이션에도 그대로 적용된다. 아래는 밸류에이션 자동화 엔진이
+만든 결과물 예시다 — 여러 방법론의 가치 범위를 한 장으로 수렴시킨 **Football Field**.
+
+<figure>
+  <img src="/personal-brand-site/case/atlas-valuation-football-field.png" alt="밸류에이션 Football Field — DCF·Peer Multiple·SOTP 방법론별 가치 범위와 최종 선택 범위를 비교한 슬라이드" loading="lazy" />
+  <figcaption>DCF(Gordon·Exit)·Peer Multiple·SOTP 방법론별 가치 범위를 한눈에 비교하고, 교집합에서 최종 선택 범위를 도출. 각 막대는 개별 모델의 산출 결과로 역추적된다. <em>(회사명 마스킹·공개자료 기반 데모.)</em></figcaption>
+</figure>
+
+방법론마다 가정이 다르면 결과도 갈린다. 엔진은 그 차이를 숨기지 않고 **나란히 펼쳐**
+어디서 수렴하고 어디서 갈라지는지 보이게 한다 — 결론을 되짚을 수 있게 하는 것이 핵심이다.
