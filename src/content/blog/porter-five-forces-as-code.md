@@ -65,6 +65,11 @@ rationale: "구매자 집중 + 낮은 전환비용 → 가격 압력 큼"
 </figure>
 
 <figure>
+  <img src="/personal-brand-site/case/atlas-5f-strategic-group.png" alt="전략집단 맵 — 자재 내재화도와 사업 범위 2축으로 경쟁사를 배치한 슬라이드" loading="lazy" />
+  <figcaption>전략집단 맵 — 자재 내재화도 × 사업 범위 2축으로 경쟁사를 배치, 특정 집단을 단독 점유(직접 경쟁자 부재)함을 시각화. <em>(경쟁사명은 임의 코드값 처리.)</em></figcaption>
+</figure>
+
+<figure>
   <img src="/personal-brand-site/case/atlas-5f-scenarios.png" alt="진화 시나리오 — Base·Hard·Disruption별 모니터링 트리거를 명시한 슬라이드" loading="lazy" />
   <figcaption>산업 진화 시나리오(Base·Hard·Disruption)를 각각의 모니터링 트리거(KPI)와 함께 명시.</figcaption>
 </figure>
