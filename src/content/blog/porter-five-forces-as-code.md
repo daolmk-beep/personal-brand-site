@@ -52,3 +52,22 @@ rationale: "구매자 집중 + 낮은 전환비용 → 가격 압력 큼"
 
 자동화가 한 일은 통찰을 대신 내준 게 아니다.
 **통찰이 설 수 있는 검증 가능한 바닥**을 깔아준 것이다. 판단은 여전히 사람 몫이다.
+
+## 실제 산출물 — 공개자료만으로 (Project Atlas)
+
+아래는 실제 분석 결과물의 핵심 2페이지다. **사업보고서·공시·웹 리서치 등 외부 공개자료만**
+입력했고, 산업 리서치부터 5F 스코어링, PPTX 슬라이드 제작까지 **AI 엔진이 한 번에** 생성했다.
+*(회사명·경쟁사명은 코드명으로 마스킹했다.)*
+
+<figure>
+  <img src="/personal-brand-site/case/atlas-5f-2track.png" alt="단일 5F 금지 — 경제적 행태가 다른 2개 산업으로 분리한 분석 슬라이드" loading="lazy" />
+  <figcaption>하나의 회사를 단일 5F로 묶지 않고, 경제적 행태가 다른 2개 산업(압출·가공 / 첨단온실 EPC)으로 분리해 각각 스코어링.</figcaption>
+</figure>
+
+<figure>
+  <img src="/personal-brand-site/case/atlas-5f-scenarios.png" alt="진화 시나리오 — Base·Hard·Disruption별 모니터링 트리거를 명시한 슬라이드" loading="lazy" />
+  <figcaption>산업 진화 시나리오(Base·Hard·Disruption)를 각각의 모니터링 트리거(KPI)와 함께 명시.</figcaption>
+</figure>
+
+공개자료만으로 이 정도다. **회사가 제공하는 심화 원천자료(데이터룸·내부 실적·계약서)를 엔진에
+투입하면**, 같은 파이프라인에서 더 정밀하고 방어 가능한 분석 보고서가 나온다.
