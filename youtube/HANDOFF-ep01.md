@@ -66,7 +66,40 @@ C:\Claude-Code\IB-Investment-House\04_MA-Deals\Project-GreenPlus\03_Valuation-Mo
 - 썸네일 시안 → `youtube/assets/thumbnails/`.
 - ※ 현재 두 폴더는 비어 있어 git에 안 올라감(빈 디렉터리). 캡쳐 추가 시 자동 추적됨.
 
-## 6. 참조
+## 6. 도구 스택 & 새 PC 재설정 (MCP) ★멀티 PC 필수
+
+제작 도구 스택(확정):
+- 🎙️ **음성 = ElevenLabs** (MCP, free 티어 월 10,000자 — EP01 제작 충분)
+- 🖼️ **이미지 = fal** (MCP, Ideogram v3·Flux 등). 썸네일 **한글 텍스트는 코드 오버레이**(모델 한글 깨짐 방지)
+- 🎬 영상 생성 = 미정 (추후, fal 비디오 모델로 같은 키 확장 가능)
+- ✂️ 편집·업로드 = 사람
+
+**MCP는 머신별 로컬 등록 → 새 PC마다 아래 재설정 필요** (키 자체는 클라우드 계정이라 어느 PC서든 동일):
+
+```bash
+# 1) uv 설치 (ElevenLabs MCP 구동용) — PowerShell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# 2) fal 등록 (HTTP, 로컬 설치 불필요)
+claude mcp add --transport http fal-ai https://mcp.fal.ai/mcp \
+  --header "Authorization: Bearer <FAL_KEY>" --scope user
+
+# 3) ElevenLabs 등록
+claude mcp add elevenlabs --scope user \
+  -e ELEVENLABS_API_KEY=<ELEVEN_KEY> \
+  -e ELEVENLABS_MCP_BASE_PATH=<레포경로>/youtube/assets/audio \
+  -e ELEVENLABS_MCP_OUTPUT_MODE=files \
+  -- "<uvx.exe 경로>" elevenlabs-mcp
+
+# 4) 확인
+claude mcp list   # 둘 다 ✔ Connected
+```
+- ElevenLabs 첫 실행은 패키지 다운로드로 **헬스체크가 1회 실패**할 수 있음 → 한 번 더 `claude mcp list`하면 연결됨.
+- **MCP 추가 후 Claude Code 세션을 새로 시작해야 도구가 활성화됨.**
+
+⚠️ **키 보관:** `<FAL_KEY>`/`<ELEVEN_KEY>`는 **저장소 커밋 금지**(user 스코프 = `~/.claude.json`). 비밀번호 관리자에 보관. 현재 키는 채팅으로 1회 노출됐으니 보안 우려 시 대시보드에서 재발급 후 위 명령으로 재등록.
+
+## 7. 참조
 
 - 블로그 글: `src/content/blog/evidence-first.md` (URL: https://daolmk-beep.github.io/personal-brand-site/blog/evidence-first)
 - 메모리: `youtube-channel-concept` (채널 컨셉, 2026-06-26 제작방식 갱신 반영)
