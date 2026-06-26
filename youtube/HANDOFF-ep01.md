@@ -5,6 +5,20 @@
 
 ---
 
+## 0. 새 PC에서 지금 시작 — TEST 작업 (음성·썸네일)
+
+> 테스트 작업은 **GreenPlus 엑셀 불필요**(대본만 사용). 새 PC는 아래 3단계만.
+
+1. **저장소 최신화:** `git pull` (이 핸드오프·`ep01-voice-test.md` 포함)
+2. **MCP 2개 등록** (이 PC엔 아직 없음 — §6 명령에 본인 키 채워 실행):
+   - uv 설치 → fal 등록 → ElevenLabs 등록 → `claude mcp list`로 둘 다 ✔ 확인
+   - 키는 비밀번호 관리자에 보관해 둔 fal/ElevenLabs 키 사용 (저장소엔 없음)
+3. **Claude Code 세션 새로 시작** (MCP 도구는 세션 시작 시 로드됨) → "EP01 음성 테스트부터 시작" 이라고 지시
+
+그러면 Claude가 `ep01-voice-test.md`의 컷 3종을 ElevenLabs로 생성(보이스 A/B) → voice_id 확정 → 이어서 썸네일 시안(fal Ideogram + 한글 오버레이) 진행.
+
+---
+
 ## 1. 지금까지 (DONE)
 
 기획·전략·대본 라인 100% 종료. 산출물:
