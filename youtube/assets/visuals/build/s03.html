@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css"></head><body>
+<div class="stage">
+  <div class="grid"></div><div class="vignette"></div>
+  <div style="position:absolute;left:140px;top:110px">
+    <div class="kicker">엔진의 흐름 — INPUT → 방어 가능한 한 장</div>
+  </div>
+  <!-- connectors -->
+  <svg width="1920" height="1080" style="position:absolute;inset:0">
+    <g stroke="#5d6b7c" stroke-width="3" fill="none">
+      <path d="M300,470 L340,470"/>
+      <path d="M570,470 C640,470 640,335 700,335"/>
+      <path d="M570,470 L700,470"/>
+      <path d="M570,470 C640,470 640,605 700,605"/>
+      <path d="M930,335 C1010,335 1010,470 1080,470"/>
+      <path d="M930,470 L1080,470"/>
+      <path d="M930,605 C1010,605 1010,470 1080,470"/>
+    </g>
+    <g stroke="#E8B33D" stroke-width="3" fill="none" stroke-dasharray="2 10" stroke-linecap="round">
+      <path d="M455,512 L455,690"/>
+      <path d="M815,647 L815,750"/>
+    </g>
+  </svg>
+  <!-- nodes -->
+  <div class="node" style="left:70px;top:430px">Assumptions</div>
+  <div class="node" style="left:340px;top:430px">WACC</div>
+  <div class="node" style="left:700px;top:296px">DCF</div>
+  <div class="node" style="left:700px;top:430px">비교기업</div>
+  <div class="node" style="left:700px;top:565px">SOTP</div>
+  <div class="node hot" style="left:1080px;top:430px">Football Field<small>한 장으로 수렴</small></div>
+  <div class="node hot" style="left:340px;top:690px;width:300px">WACC 출처검증</div>
+  <div class="node hot" style="left:665px;top:750px;width:300px">Peer 출처검증</div>
+  <!-- callout -->
+  <div style="position:absolute;left:1420px;top:600px;max-width:380px">
+    <div class="pill primary">오늘의 주인공</div>
+    <div class="sub" style="font-size:30px;margin-top:20px;line-height:1.4">대부분의 모델엔<br><span class="amber">없는</span> 두 시트</div>
+  </div>
+  <div class="foot">LEDGERLAB · EP01</div>
+</div></body></html>

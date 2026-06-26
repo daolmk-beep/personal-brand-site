@@ -1,0 +1,46 @@
+/* EP01 비주얼 공유 스타일 — [STYLE] 토큰 (1920x1080) */
+:root{
+  --ink:#0E1116; --navy:#16202e; --ink2:#090c10;
+  --amber:#E8B33D; --red:#D64545;
+  --text:#EAEEF3; --muted:#9fb1c4; --faint:#5d6b7c;
+  --green:#2f7d5b; --blue:#2f6db0;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+.stage{position:relative;width:1920px;height:1080px;overflow:hidden;
+  background:radial-gradient(120% 90% at 70% 28%, var(--navy) 0%, var(--ink) 58%, var(--ink2) 100%);
+  font-family:'Malgun Gothic','Pretendard','Apple SD Gothic Neo',sans-serif;color:var(--text)}
+.grid{position:absolute;inset:0;opacity:.06;
+  background-image:linear-gradient(#9fb6d6 1px,transparent 1px),linear-gradient(90deg,#9fb6d6 1px,transparent 1px);
+  background-size:64px 64px}
+.vignette{position:absolute;inset:0;box-shadow:inset 0 0 420px 90px rgba(0,0,0,.72);pointer-events:none}
+.amberglow{position:absolute;width:680px;height:680px;border-radius:50%;left:58%;top:-160px;
+  background:radial-gradient(circle,rgba(232,179,61,.18) 0%,transparent 62%)}
+.kicker{font-size:30px;letter-spacing:.32em;color:var(--amber);font-weight:700}
+.h1{font-size:118px;line-height:1.08;font-weight:800;letter-spacing:-.01em;margin:0}
+.h2{font-size:74px;line-height:1.12;font-weight:800;margin:0}
+.red{color:var(--red)} .amber{color:var(--amber)}
+.sub{font-size:34px;color:var(--muted);font-weight:400}
+.foot{position:absolute;left:140px;bottom:60px;font-size:24px;letter-spacing:.2em;color:var(--faint)}
+.sec{position:absolute;right:140px;bottom:60px;font-size:24px;letter-spacing:.2em;color:var(--faint)}
+/* 칩(질문/태그) */
+.chip{background:rgba(159,177,196,.08);border:1px solid rgba(232,179,61,.42);
+  border-radius:14px;padding:20px 28px;font-size:30px;color:#dfe7ef}
+.chip b{color:var(--amber)}
+/* 노드/플로우 */
+.node{position:absolute;border-radius:16px;padding:22px 0;width:230px;text-align:center;
+  font-size:30px;font-weight:700;background:rgba(159,177,196,.07);border:1px solid rgba(159,177,196,.28);color:#dbe4ee}
+.node.hot{border-color:var(--amber);background:rgba(232,179,61,.12);color:#fff;
+  box-shadow:0 0 40px rgba(232,179,61,.25)}
+.node small{display:block;font-size:19px;font-weight:500;color:var(--muted);margin-top:6px;letter-spacing:.02em}
+/* 태그 pill */
+.pill{display:inline-block;border-radius:999px;padding:10px 24px;font-size:26px;font-weight:700}
+.pill.primary{background:rgba(232,179,61,.16);color:var(--amber);border:1px solid var(--amber)}
+.pill.ref{background:rgba(159,177,196,.12);color:var(--muted);border:1px solid var(--faint)}
+.pill.excl{background:rgba(214,69,69,.14);color:var(--red);border:1px solid var(--red)}
+/* 하단 자막(lower-third) + 숫자핀 */
+.lower3{position:absolute;left:120px;bottom:120px;font-size:46px;font-weight:700;
+  background:linear-gradient(90deg,rgba(9,12,16,.86),rgba(9,12,16,.35));padding:20px 34px;border-left:6px solid var(--amber)}
+.pin{display:inline-block;background:var(--amber);color:#1a1206;font-weight:800;border-radius:10px;padding:6px 16px}
+.pin.red{background:var(--red);color:#fff}
+.strike{position:relative} .strike:after{content:"";position:absolute;left:-4px;right:-4px;top:52%;height:6px;background:var(--red);transform:rotate(-3deg)}

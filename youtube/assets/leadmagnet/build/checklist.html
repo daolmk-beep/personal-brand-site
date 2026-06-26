@@ -1,0 +1,47 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+@page{ size:A4; margin:14mm 15mm; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Malgun Gothic','Pretendard',sans-serif;color:#1d2733;font-size:11.2pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.brand{display:flex;justify-content:space-between;align-items:center;font-size:9.5pt;letter-spacing:.14em;color:#8a96a6;font-weight:700;text-transform:uppercase}
+.brand .b{color:#16273E}
+.hwrap{margin-top:10px;border-left:6px solid #E8B33D;padding-left:18px}
+h1{font-size:22pt;line-height:1.12;color:#16273E;font-weight:800;letter-spacing:-.01em}
+.tri{display:inline-block;margin-top:6px;font-size:10pt;font-weight:800;color:#B07A12;letter-spacing:.04em}
+.lede{margin:11px 0 3px;font-size:10.4pt;color:#3a4656;background:#FAF6EC;border:1px solid #efe4c6;border-radius:8px;padding:10px 15px}
+ol.checks{list-style:none;margin:9px 0 0}
+ol.checks li{display:flex;gap:13px;padding:6.5px 0;border-bottom:1px solid #eef1f4;break-inside:avoid}
+.num{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:#16273E;color:#fff;font-weight:800;font-size:12pt;display:flex;align-items:center;justify-content:center}
+.box{flex:0 0 auto;width:22px;height:22px;border:2.5px solid #B8902A;border-radius:5px;margin-top:3px}
+.txt b{display:block;font-size:12pt;color:#16273E;font-weight:800;margin-bottom:2px}
+.txt p{font-size:10.3pt;color:#46525f}
+.cta{margin-top:12px;background:#16273E;color:#fff;border-radius:10px;padding:14px 20px;break-inside:avoid}
+.cta .w{font-size:11.5pt;font-weight:800}
+.cta .w em{color:#F2C24B;font-style:normal}
+.cta .link{margin-top:8px;font-size:10pt;color:#cdd6e2}
+.cta .link a{color:#F2C24B;text-decoration:none;font-weight:700}
+footer{margin-top:14px;display:flex;justify-content:space-between;font-size:8.6pt;color:#9aa6b4}
+</style></head><body>
+  <div class="brand"><span>LedgerLab · <span class="b">증거우선 밸류에이션</span></span><span>EP01 보조자료</span></div>
+  <div class="hwrap">
+    <h1>방어 가능한 밸류에이션<br>자가 점검 체크리스트</h1>
+    <span class="tri">TRIANGULATION 10 · 트라이앵귤레이션 점검</span>
+  </div>
+  <div class="lede">IC에서 <b>"이 비교기업 왜 골랐어요? 할인율 근거는요?"</b>라는 질문에 — 의견이 아니라 <b>시트로</b> 답하기 위한 최소 기준 10가지. 내 모델이 몇 개나 충족하는지 ☐에 체크해 보세요.</div>
+  <ol class="checks">
+    <li><div class="num">1</div><div class="box"></div><div class="txt"><b>비교기업 — 선정 사유가 적혀 있는가?</b><p>각 Peer마다 포함/제외 사유(rationale)와 출처 URL이 한 칸씩 기록돼 있는가.</p></div></li>
+    <li><div class="num">2</div><div class="box"></div><div class="txt"><b>이상치 처리</b><p>배수가 비정상(음수 EBITDA, 100배 초과 등)일 때 평균이 아니라 중앙값·제외로 방어했는가.</p></div></li>
+    <li><div class="num">3</div><div class="box"></div><div class="txt"><b>Raw vs Applied 배수</b><p>시장 배수를 그대로 쓰지 않고 할인/조정했다면, 조정률과 근거가 기록돼 있는가.</p></div></li>
+    <li><div class="num">4</div><div class="box"></div><div class="txt"><b>할인율 입력값 출처</b><p>무위험이자율·MRP·베타 각각의 기준일과 출처를 6개월 뒤에도 되짚을 수 있는가.</p></div></li>
+    <li><div class="num">5</div><div class="box"></div><div class="txt"><b>방법론 다각화</b><p>DCF(Gordon/Exit)·Peer·SOTP 중 최소 2개 이상으로 교차 검증했는가.</p></div></li>
+    <li><div class="num">6</div><div class="box"></div><div class="txt"><b>Primary vs Reference 구분</b><p>어떤 방법을 주(主)로, 어떤 방법을 참고용/제외로 두었고 그 이유가 적혀 있는가.</p></div></li>
+    <li><div class="num">7</div><div class="box"></div><div class="txt"><b>수렴 vs 발산 가시화</b><p>방법별 가치 범위를 한 장(Football Field)으로 나란히 펼쳤는가.</p></div></li>
+    <li><div class="num">8</div><div class="box"></div><div class="txt"><b>단일 가정 변경 → 전파</b><p>한 곳의 가정을 바꾸면 결론까지 자동 재계산되는가(하드코딩 단절 없음).</p></div></li>
+    <li><div class="num">9</div><div class="box"></div><div class="txt"><b>증거 무결성</b><p>근거 파일이 "그때 그 파일"인지 검증(해시/스냅샷)하는 장치가 있는가.</p></div></li>
+    <li><div class="num">10</div><div class="box"></div><div class="txt"><b>사람의 판단 표시</b><p>AI가 자동화한 부분과 사람이 결정한 부분(이상치 컷·방법 채택)이 구분돼 있는가.</p></div></li>
+  </ol>
+  <div class="cta">
+    <div class="w">이 10개 중 <em>5개 이하</em>라면, 그 밸류에이션은 IC에서 방어되지 않습니다.</div>
+    <div class="link">전체 방법론(Claim → Evidence → Test → Finding) → <a>daolmk-beep.github.io/personal-brand-site/blog/evidence-first</a></div>
+  </div>
+  <footer><span>© LedgerLab — 공개자료 기반 연습 사례. 실무 적용은 각자 판단.</span><span>EP01 · 트라이앵귤레이션 체크리스트</span></footer>
+</body></html>

@@ -32,7 +32,12 @@ EV 대 EBITDA가…이백삼십 배입니다.
 ## 확정 후
 - voice_id + 모델 + 세팅을 이 파일 하단에 기록 → 풀 에피소드(`ep01-narration-clean.md`) 생성에 그대로 사용.
 
-### 확정값 (확정 시 기입)
-- voice_id: `____`
-- model: `____`
-- settings: stability `__` / similarity `__` / speed `__`
+### 확정값 (2026-06-26 확정)
+- voice: **Chris - Charming, Down-to-Earth** (ElevenLabs 프리메이드)
+- voice_id: `iP95p4xoKVk53GoZ742B`
+- model: `eleven_multilingual_v2`
+- language: `ko`
+- settings: stability `0.30` / similarity `0.75` / speed `1.15` / style `0.45` / speaker_boost `on`
+- 테스트 산출물: `youtube/assets/audio/test/cut1~3_chris.mp3` (3컷 톤 일관성 확인 완료)
+
+> **제약 메모(중요):** ElevenLabs **무료 티어 API는 프리메이드 보이스만** 사용 가능. 한국어 네이티브 라이브러리 보이스(Midnight Cave·Eun-joong·Min 등)와 Voice Design은 **유료 전용**(`paid_plan_required`)이라 무료로는 불가. → Chris는 영어권 프리메이드가 multilingual_v2로 한국어를 읽는 것이라 약한 외국 억양 잔존. 네이티브 품질이 필요하면 Starter 업그레이드 후 라이브러리 보이스로 재확정할 것.
